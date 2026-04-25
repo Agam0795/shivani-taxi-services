@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'Manrope', sans-serif;
+
+  --color-brand-ink: #0b2239;
+  --color-brand-slate: #415a77;
+  --color-brand-ocean: #1d5d8f;
+  --color-brand-gold: #f6bd60;
+  --color-brand-amber: #f8c978;
+  --color-brand-cream: #fff1d8;
+  --color-brand-mist: #f4f8fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: radial-gradient(circle at 20% 10%, #fff8e8 0%, #f4f8fb 45%, #ecf3f8 100%);
+  color: var(--color-brand-slate);
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(246, 189, 96, 0.24), transparent 28%),
+    radial-gradient(circle at 75% 20%, rgba(29, 93, 143, 0.16), transparent 32%);
+  pointer-events: none;
+}
+
+.animate-fade-up {
+  animation: fadeUp 700ms ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-primary {
+  @apply inline-flex items-center rounded-xl bg-brand-ink px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-ocean;
+}
+
+.btn-outline {
+  @apply inline-flex items-center rounded-xl border border-brand-ink px-5 py-3 text-sm font-semibold text-brand-ink transition hover:bg-brand-ink hover:text-white;
+}
+
+.btn-whatsapp {
+  @apply inline-flex items-center rounded-xl bg-[#25D366] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-110;
+}
+
+.input-field {
+  @apply w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-brand-ink outline-none transition focus:border-brand-ocean focus:ring-2 focus:ring-brand-ocean/20;
+}
+
+.label {
+  @apply mb-1.5 block text-sm font-semibold text-brand-ink;
+}
+
+.error-text {
+  @apply mt-1 text-xs text-red-600;
+}
+
+.social-pill {
+  @apply inline-flex items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-sm font-medium text-brand-ink transition hover:bg-brand-cream;
+}
