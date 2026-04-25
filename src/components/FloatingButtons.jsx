@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { businessInfo, socialLinks } from '../data/siteData';
-import { PhoneIcon, WhatsAppIcon } from './SocialIcons';
+import { BookingIcon, PhoneIcon, WhatsAppIcon } from './SocialIcons';
 
 const defaultMessage = encodeURIComponent(
   'Hello Shivani Taxi Services, I want to book a cab. Please share availability and fare details.'
@@ -29,6 +29,7 @@ export default function FloatingButtons() {
         to="/pricing"
         className="group inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-gold p-0 text-brand-ink shadow-lg transition hover:scale-105 sm:h-auto sm:w-auto sm:gap-2 sm:px-4 sm:py-3 sm:text-sm"
       >
+        <BookingIcon className="h-5 w-5" />
         <span className="hidden sm:inline">Pricing/Booking</span>
       </Link>
     </div>

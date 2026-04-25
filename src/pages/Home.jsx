@@ -7,6 +7,7 @@ import {
   vehicles,
 } from '../data/siteData';
 import { useState } from 'react';
+import { BookingIcon } from '../components/SocialIcons';
 
 function formatDateForWhatsApp(value) {
   if (!value) return '-';
@@ -76,7 +77,8 @@ Passengers: ${snapshot.passengers}`);
               pickup every time.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <Link to="/pricing" className="btn-primary">
+              <Link to="/pricing" className="btn-primary inline-flex items-center gap-2">
+                <BookingIcon className="h-5 w-5" />
                 Pricing / Booking
               </Link>
               <a href={`tel:${businessInfo.phones[0]}`} className="btn-outline">

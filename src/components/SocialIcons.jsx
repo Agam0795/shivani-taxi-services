@@ -37,3 +37,11 @@ export function InstagramIcon({ className = 'h-5 w-5' }) {
     </svg>
   );
 }
+
+export function BookingIcon({ className = 'h-5 w-5' }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1.5A2.5 2.5 0 0 1 22 6.5v13A2.5 2.5 0 0 1 19.5 22h-15A2.5 2.5 0 0 1 2 19.5v-13A2.5 2.5 0 0 1 4.5 4H6V3a1 1 0 0 1 1-1Zm11.5 8.5h-13v9a.5.5 0 0 0 .5.5h12a.5.5 0 0 0 .5-.5v-9ZM18 6H6v2h12V6Zm-6 3.5a.75.75 0 0 1 .75.75v1.25H14a.75.75 0 0 1 0 1.5h-1.25v1.25a.75.75 0 0 1-1.5 0V13H10a.75.75 0 0 1 0-1.5h1.25V10.25a.75.75 0 0 1 .75-.75Z" />
+    </svg>
+  );
+}
