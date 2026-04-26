@@ -3,6 +3,7 @@ export const businessInfo = {
   legalName: 'Shivani Tour and Travels',
   owner: 'Arun Yadav',
   ownerImage: '/owner.jpeg',
+  homeOwnerImage: '/owner-home-page.jpeg',
   phones: ['+918279760861', '+919368700598'],
   displayPhones: ['+91 82797 60861', '+91 9368700598'],
   email: 'arunyadav1574@gmail.com',

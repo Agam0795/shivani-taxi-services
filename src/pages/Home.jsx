@@ -93,16 +93,22 @@ Passengers: ${snapshot.passengers}`);
                 WhatsApp Chat
               </a>
             </div>
+
+            <div className="mt-8 mx-auto w-full max-w-xl overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-lg">
+              <img
+                src={businessInfo.homeOwnerImage}
+                alt={businessInfo.owner}
+                className="h-64 w-full rounded-2xl object-contain object-center sm:h-72 md:h-80"
+                loading="lazy"
+              />
+            </div>
           </div>
 
-          <form
-            onSubmit={handleQuickBooking}
-            className="animate-fade-up rounded-2xl border border-slate-200 bg-white p-5 shadow-xl md:p-7"
-          >
-            <h2 className="font-display text-2xl text-brand-ink">Quick Booking</h2>
-            <p className="mt-1 text-sm text-brand-slate">Fast booking confirmation on WhatsApp.</p>
-            <div className="mt-5 grid gap-3">
-              <div>
+          <form onSubmit={handleQuickBooking} className="animate-fade-up rounded-3xl border border-slate-200 bg-white p-5 shadow-xl md:p-7">
+              <h2 className="font-display text-2xl text-brand-ink">Quick Booking</h2>
+              <p className="mt-1 text-sm text-brand-slate">Fast booking confirmation on WhatsApp.</p>
+              <div className="mt-5 grid gap-3">
+                <div>
                 <label className="label">Name</label>
                 <input
                   required
@@ -113,7 +119,7 @@ Passengers: ${snapshot.passengers}`);
                   className="input-field"
                 />
               </div>
-              <div>
+                <div>
                 <label className="label">Phone Number</label>
                 <input
                   required
@@ -124,7 +130,7 @@ Passengers: ${snapshot.passengers}`);
                   className="input-field"
                 />
               </div>
-              <div>
+                <div>
                 <label className="label">Pickup Location</label>
                 <input
                   required
@@ -135,7 +141,7 @@ Passengers: ${snapshot.passengers}`);
                   className="input-field"
                 />
               </div>
-              <div>
+                <div>
                 <label className="label">Drop Location</label>
                 <input
                   required
@@ -146,7 +152,7 @@ Passengers: ${snapshot.passengers}`);
                   className="input-field"
                 />
               </div>
-              <div>
+                <div>
                 <label className="label">Date & Time</label>
                 <input
                   required
@@ -161,7 +167,7 @@ Passengers: ${snapshot.passengers}`);
                   className="input-field"
                 />
               </div>
-              <div>
+                <div>
                 <label className="label">Car Type</label>
                 <select
                   required
@@ -176,7 +182,7 @@ Passengers: ${snapshot.passengers}`);
                   ))}
                 </select>
               </div>
-              <div>
+                <div>
                 <label className="label">Passengers</label>
                 <input
                   required
@@ -192,12 +198,12 @@ Passengers: ${snapshot.passengers}`);
                   placeholder="Passengers"
                   className={`input-field ${quickErrors.passengers ? 'border-red-500 ring-2 ring-red-200' : ''}`}
                 />
-                {quickErrors.passengers && <p className="text-xs text-red-600">{quickErrors.passengers}</p>}
+                  {quickErrors.passengers && <p className="text-xs text-red-600">{quickErrors.passengers}</p>}
+                </div>
+                <button type="submit" className="btn-primary w-full justify-center">
+                  Send Booking on WhatsApp
+                </button>
               </div>
-              <button type="submit" className="btn-primary w-full justify-center">
-                Send Booking on WhatsApp
-              </button>
-            </div>
           </form>
         </div>
       </section>
