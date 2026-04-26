@@ -10,7 +10,7 @@ export const businessInfo = {
 };
 
 export const socialLinks = {
-  whatsapp: 'https://wa.me/918279760861',
+  whatsapp: 'https://wa.me/919368700598',
   facebook: 'https://www.facebook.com/share/1CP7k2zn1R/',
   instagram: 'https://www.instagram.com/shivani_taxi_service?utm_source=qr&igsh=bGNsbGl6Ymx6NDgx',
 };
@@ -46,9 +46,9 @@ export const vehicles = [
     seats: '7 + Driver',
     description:
       'Premium MPV for corporate tours, outstation routes, and high-comfort group journeys.',
-    image: '/fleet/innova-crysta.webp',
+    image: '/fleet/innova-crysta.jpeg',
     fallbackImage:
-      '/fleet/innova-crysta.webp',
+      '/fleet/innova-crysta.jpeg',
     photoTag: 'Related Fleet Photo: Innova Crysta',
   },
 ];
@@ -59,6 +59,16 @@ export const pricingData = {
     { vehicle: 'Sedan (Dzire)', route: 'Delhi -> Agra', fare: '₹2,899' },
     { vehicle: 'Innova Crysta', route: 'Agra -> Delhi', fare: '₹6,500' },
     { vehicle: 'Innova Crysta', route: 'Delhi -> Agra', fare: '₹6,000' },
+    { vehicle: 'Innova Crysta', route: 'Agra -> Jaipur', fare: '₹7,000' },
+    { vehicle: 'Innova Crysta', route: 'Jaipur -> Agra', fare: '₹6,500' },
+    { vehicle: 'Innova Crysta', route: 'Agra -> Ghaziabad', fare: '₹6,500' },
+    { vehicle: 'Innova Crysta', route: 'Ghaziabad -> Agra', fare: '₹6,000' },
+    { vehicle: 'Innova Crysta', route: 'Agra -> Noida', fare: '₹6,500' },
+    { vehicle: 'Innova Crysta', route: 'Noida -> Agra', fare: '₹6,000' },
+    { vehicle: 'Innova Crysta', route: 'Agra -> Gurgaon', fare: '₹6,500' },
+    { vehicle: 'Innova Crysta', route: 'Gurgaon -> Agra', fare: '₹6,000' },
+    { vehicle: 'Innova Crysta', route: 'Agra -> Faridabad', fare: '₹6,500' },
+    { vehicle: 'Innova Crysta', route: 'Faridabad -> Agra', fare: '₹6,000' },
     { vehicle: 'Sedan (Dzire)', route: 'Agra -> Jaipur', fare: '₹3,499' },
     { vehicle: 'Sedan (Dzire)', route: 'Jaipur -> Agra', fare: '₹3,199' },
     { vehicle: 'Sedan (Dzire)', route: 'Agra -> Haridwar', fare: '₹7,000' },
@@ -96,6 +106,16 @@ export const pricingData = {
     { vehicle: 'Sedan (Dzire)', route: 'Delhi -> Agra', fare: '₹2,899' },
     { vehicle: 'Innova Crysta', route: 'Agra -> Delhi', fare: '₹6,500' },
     { vehicle: 'Innova Crysta', route: 'Delhi -> Agra', fare: '₹6,000' },
+    { vehicle: 'Innova Crysta', route: 'Agra -> Jaipur', fare: '₹7,000' },
+    { vehicle: 'Innova Crysta', route: 'Jaipur -> Agra', fare: '₹6,500' },
+    { vehicle: 'Innova Crysta', route: 'Agra -> Ghaziabad', fare: '₹6,500' },
+    { vehicle: 'Innova Crysta', route: 'Ghaziabad -> Agra', fare: '₹6,000' },
+    { vehicle: 'Innova Crysta', route: 'Agra -> Noida', fare: '₹6,500' },
+    { vehicle: 'Innova Crysta', route: 'Noida -> Agra', fare: '₹6,000' },
+    { vehicle: 'Innova Crysta', route: 'Agra -> Gurgaon', fare: '₹6,500' },
+    { vehicle: 'Innova Crysta', route: 'Gurgaon -> Agra', fare: '₹6,000' },
+    { vehicle: 'Innova Crysta', route: 'Agra -> Faridabad', fare: '₹6,500' },
+    { vehicle: 'Innova Crysta', route: 'Faridabad -> Agra', fare: '₹6,000' },
     { vehicle: 'Sedan (Dzire)', route: 'Agra -> Jaipur', fare: '₹3,499' },
     { vehicle: 'Sedan (Dzire)', route: 'Jaipur -> Agra', fare: '₹3,199' },
     { vehicle: 'Sedan (Dzire)', route: 'Agra -> Haridwar', fare: '₹7,000' },
