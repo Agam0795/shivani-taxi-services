@@ -20,6 +20,12 @@ export default function About() {
 
         <article className="rounded-2xl border border-slate-200 bg-brand-cream/60 p-6 shadow-sm">
           <h2 className="font-display text-2xl text-brand-ink">Owner Information</h2>
+          <img
+            src={businessInfo.ownerImage}
+            alt={businessInfo.owner}
+            loading="lazy"
+            className="mt-4 h-40 w-40 rounded-xl object-cover ring-2 ring-white"
+          />
           <p className="mt-3 text-sm text-brand-slate sm:text-base">
             Owner: <span className="font-semibold text-brand-ink">{businessInfo.owner}</span>
           </p>
