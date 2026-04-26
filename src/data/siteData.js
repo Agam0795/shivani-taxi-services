@@ -7,7 +7,7 @@ export const businessInfo = {
   displayPhones: ['+91 82797 60861', '+91 9368700598'],
   email: 'arunyadav1574@gmail.com',
   tagline: 'Safe • Affordable • On-Time Travel',
-  location: 'Uttar Pradesh, India',
+  location: 'DayalBagh, Agra, Uttar Pradesh, India-282005',
 };
 
 export const socialLinks = {
