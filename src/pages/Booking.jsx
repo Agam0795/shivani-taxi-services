@@ -65,7 +65,7 @@ Pickup: ${snapshot.pickup}
 Drop: ${snapshot.drop}
 Date: ${formatDateForWhatsApp(snapshot.dateTime)}
 Car: ${snapshot.vehicle}
-  Passengers: ${sanitizePassengers(snapshot.passengers)}`);
+Passengers: ${sanitizePassengers(snapshot.passengers)}`);
 
     window.open(`${socialLinks.whatsapp}?text=${waText}`, '_blank');
     setMessage('Booking details sent to WhatsApp. Our team will confirm shortly.');

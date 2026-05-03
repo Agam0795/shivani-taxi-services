@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { businessInfo, socialLinks } from '../data/siteData';
 import {
   FacebookIcon,
@@ -52,6 +53,16 @@ export default function Contact() {
                 <InstagramIcon className="h-5 w-5" /> Instagram
               </a>
             </div>
+          </div>
+
+          <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+            <h2 className="font-display text-2xl text-brand-ink">Rating & Review</h2>
+            <p className="mt-2 text-sm text-brand-slate">
+              Share your experience with our service. Your feedback helps us improve and serve better.
+            </p>
+            <Link to="/review" className="btn-primary mt-4 inline-flex items-center gap-2">
+              <WhatsAppIcon className="h-5 w-5" /> Open Rating & Review Form
+            </Link>
           </div>
         </div>
 

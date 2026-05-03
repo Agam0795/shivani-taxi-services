@@ -8,6 +8,19 @@ import {
 } from '../data/siteData';
 import { useState } from 'react';
 import { BookingIcon } from '../components/SocialIcons';
+import { seoPages } from '../data/seoPages';
+
+const featuredSeoLinks = [
+  '/agra-taxi-service',
+  '/dayalbagh-taxi-service',
+  '/airport-taxi-agra',
+  '/outstation-taxi-agra',
+  '/agra-to-delhi-taxi',
+  '/best-taxi-service-in-agra',
+  '/one-way-special-routes-agra-delhi-ncr',
+  '/one-way-special-routes-agra-jaipur-west',
+  '/one-way-special-routes-agra-haridwar-lucknow',
+];
 
 function formatDateForWhatsApp(value) {
   if (!value) return '-';
@@ -235,6 +248,30 @@ Passengers: ${snapshot.passengers}`);
               <p className="mt-2 text-sm text-brand-slate">{item.desc}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 pb-16">
+        <div className="mb-7 flex flex-wrap items-end justify-between gap-4">
+          <h2 className="font-display text-3xl text-brand-ink">SEO Landing Pages</h2>
+          <p className="max-w-2xl text-sm text-brand-slate">
+            These pages target local, service-based, and route-based searches so users can reach the right booking page quickly.
+          </p>
+        </div>
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          {seoPages
+            .filter((page) => featuredSeoLinks.includes(page.path))
+            .map((page) => (
+              <Link
+                key={page.path}
+                to={page.path}
+                className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-brand-ocean">SEO Page</p>
+                <h3 className="mt-2 font-display text-xl text-brand-ink">{page.title}</h3>
+                <p className="mt-2 text-sm text-brand-slate">{page.metaDescription}</p>
+              </Link>
+            ))}
         </div>
       </section>
 

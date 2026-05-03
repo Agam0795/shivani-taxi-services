@@ -13,6 +13,11 @@ export default function Footer() {
     <footer className="mt-20 bg-brand-ink text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-3">
         <div>
+          <img
+            src="/logo.png"
+            alt="Shivani Taxi Services Logo"
+            className="mb-3 h-14 w-auto object-contain brightness-0 invert"
+          />
           <h3 className="font-display text-2xl">Shivani Taxi Services</h3>
           <p className="mt-2 text-sm text-white/80">{businessInfo.legalName}</p>
           <p className="mt-4 text-sm text-white/70">
@@ -26,6 +31,14 @@ export default function Footer() {
             <Link to="/services" className="hover:text-brand-gold">Services</Link>
             <Link to="/pricing" className="hover:text-brand-gold">Pricing</Link>
             <Link to="/booking" className="hover:text-brand-gold">Booking</Link>
+            <Link to="/agra-to-delhi-taxi" className="hover:text-brand-gold">Agra to Delhi Taxi</Link>
+            <Link to="/agra-to-jaipur-taxi" className="hover:text-brand-gold">Agra to Jaipur Taxi</Link>
+            <Link to="/agra-taxi-service" className="hover:text-brand-gold">Agra Taxi Service</Link>
+            <Link to="/outstation-taxi-agra" className="hover:text-brand-gold">Outstation Taxi Service</Link>
+            <Link to="/local-cab-service-agra" className="hover:text-brand-gold">Local Cab Service Agra</Link>
+            <Link to="/one-way-special-routes-agra-delhi-ncr" className="hover:text-brand-gold">One Way Special Routes Delhi NCR</Link>
+            <Link to="/one-way-special-routes-agra-jaipur-west" className="hover:text-brand-gold">One Way Special Routes Jaipur West</Link>
+            <Link to="/review" className="hover:text-brand-gold">Review</Link>
             <Link to="/contact" className="hover:text-brand-gold">Contact</Link>
           </div>
         </div>

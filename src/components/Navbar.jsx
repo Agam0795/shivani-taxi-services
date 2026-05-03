@@ -12,6 +12,7 @@ const navItems = [
   { label: 'Home', to: '/' },
   { label: 'Services', to: '/services' },
   { label: 'Pricing', to: '/pricing' },
+  { label: 'Review', to: '/review' },
   { label: 'About', to: '/about' },
   { label: 'Contact', to: '/contact' },
 ];
@@ -68,9 +69,16 @@ export default function Navbar() {
 
       <div className="bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-          <Link to="/" className="leading-tight">
-            <p className="font-display text-lg text-brand-ink sm:text-xl">Shivani Taxi Services</p>
-            <p className="text-xs font-medium text-brand-slate">Shivani Tour and Travels</p>
+          <Link to="/" className="flex items-center gap-3 leading-tight">
+            <img
+              src="/logo.png"
+              alt="Shivani Taxi Services Logo"
+              className="h-12 w-auto object-contain"
+            />
+            <div>
+              <p className="font-display text-lg text-brand-ink sm:text-xl">Shivani Taxi Services</p>
+              <p className="text-xs font-medium text-brand-slate">Shivani Tour and Travels</p>
+            </div>
           </Link>
 
           <button
